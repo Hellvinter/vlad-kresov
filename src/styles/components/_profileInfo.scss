@@ -1,0 +1,98 @@
+.my-profile {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background: #3c5267;
+}
+
+
+.profile-subgrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+
+.profile__heading {
+    grid-column: 5 / 9;
+    grid-row: 1 / 2;
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+    border-bottom: 1px solid mediumSeaGreen;
+    margin-bottom: 1.5rem;
+    font-size: 1.5em;
+    & h2 {
+       font-weight: normal;
+       color: mediumSeaGreen;
+    }
+    & p {
+        font-size: .85em;
+        color: silver;
+    }
+}
+
+.profile-info {
+    height: 100%;
+    width: 100%;
+    color: silver;
+    grid-column: 5 / 9;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr, 1fr;
+    grid-gap: 2rem;
+    border-bottom: 1px solid mediumSeaGreen;
+}
+
+.profile__aboutMe {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    margin-left: 2rem;
+}
+
+.profile__aboutMe__heading, .profile-profileName__heading {
+    color: mediumSeaGreen;
+    font-weight: normal;
+}
+
+.profile-pfofileName{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.profile-contacts {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    //margin-top: 2rem;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.profile-contacts__email {
+    color: silver; //rgb(45,45,45);
+    margin: 0;
+    &:hover {
+        color: mediumSeaGreen;
+    }
+}
+
+.profile__interests {
+    margin-top: 1rem;
+    grid-column: 5 / 9;
+    grid-row : 3 / 4 ;
+    border-bottom: 1px solid mediumSeaGreen;
+    border-top: 1px solid mediumSeaGreen;
+    color: silver;
+}
+
+.profile__interests__heading {
+    color: mediumSeaGreen; 
+}
+
+.profile__interests__text {
+    font-size: 1.1em;
+}

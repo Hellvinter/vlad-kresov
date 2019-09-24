@@ -1,0 +1,68 @@
+.footer {
+    
+    height: 100vh;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #3c5267;
+}
+
+.footer__heading {
+    color: mediumSeaGreen;
+}
+
+.footer__punchLine {
+    margin-top: -1rem;
+    color: silver;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.footer__contacts {
+    margin: 2rem  auto 0 auto;
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid mediumSeaGreen;
+    border-bottom: 1px solid mediumSeaGreen;
+
+}
+
+.footer__afterword{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    p {
+        margin-bottom: 3rem;
+        font-size: 1.2em;
+        color: silver;
+    }
+}
+
+
+.footer__hireMe {
+    color: silver;
+}
+
+.footer__contacts__email {
+    color: silver;
+
+    &:hover {
+        color: mediumSeaGreen;
+    }
+}
+
+.veryLastWords {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    color: silver;
+    font-size: 1.1em;
+}

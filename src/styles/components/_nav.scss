@@ -1,0 +1,36 @@
+.navigation {
+    position: sticky;
+    top: 10%;
+    right: 5%;
+    width: 7.169rem;
+    height: fit-content;
+   ;
+}
+
+.navigation__ul {
+    background-color: rgb(34,34,34);
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation__item {
+    padding: 1.3rem 1.2rem;
+}
+
+.navigation__link {
+    padding: 1.3rem 1.2rem;
+    color: white;
+
+    &:hover {
+        color: silver;
+    }
+}
+
+.navigation__item > .current {
+    background-color: mediumSeaGreen;
+}

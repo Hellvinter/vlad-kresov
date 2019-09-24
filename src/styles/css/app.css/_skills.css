@@ -1,0 +1,96 @@
+.abilities {
+  margin-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff; }
+
+.abilities__heading {
+  font-size: 1.6em; }
+
+.abilities__subHeading {
+  color: #000; }
+
+.abilities__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: .5rem 0;
+  width: 30%;
+  border-bottom: 1px solid mediumSeaGreen;
+  border-top: 1px solid mediumSeaGreen; }
+
+.abilities__item {
+  width: 100%;
+  margin: .3rem 0 .3rem 10%;
+  color: silver;
+  font-size: 1.1em; }
+
+.abilities__item-skillContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.empireContainer {
+  width: 18%;
+  margin-right: 2.1rem;
+  padding: .15rem .1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  border: 1px solid mediumSeaGreen;
+  border-radius: 5%; }
+
+.empireContainer-stars {
+  margin-right: .2rem;
+  color: mediumSeaGreen; }
+
+.abilities__education {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: .5rem 0;
+  width: 30%;
+  border-bottom: 1px solid mediumSeaGreen;
+  border-top: 1px solid mediumSeaGreen;
+  font-size: 1.1em; }
+  .abilities__education a {
+    color: silver;
+    margin-left: 1rem; }
+    .abilities__education a:hover {
+      color: mediumSeaGreen; }
+  .abilities__education p {
+    color: silver;
+    margin-right: 1rem; }
+
+
