@@ -99,10 +99,6 @@ export const skills =  [
     {
         skill: 'Bootstrap Framework',
         number: 4
-    },
-    {
-        skill: 'BEM',
-        number: 3
     }
        
 ];
@@ -148,7 +144,7 @@ export const afterWord = {
     "I read a bunch of articles like " + 
     "'That resume template will land your job' or " +
     "'Put this in your resume send it to someone then believe " +
-    "it will not end up in a bunch of other resumes'. " +
+    "it will not end up in a pile of other resumes'. " +
     "I write resume like this, then look at it... and it's was really boring. " +
     "So I think 'hmmm wait a minute... dude you a software developer, " + 
     "go build the thing and publish it'. " +

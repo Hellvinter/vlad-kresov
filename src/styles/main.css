@@ -430,7 +430,8 @@ p, a, h3, h4 {
   font-weight: 400; }
 
 p {
-  font-weight: 300; }
+  font-weight: 300;
+  text-shadow: 0.10px 0.10px 0.10px #000; }
 
 .header__heading {
   font-family: 'Raleway', sans-serif;
@@ -946,7 +947,7 @@ p {
 
 .expirience {
   padding-top: 1.5rem;
-  width: 70%;
+  width: 40%;
   margin: 0 auto;
   text-align: center; }
 
