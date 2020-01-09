@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+const Grid = createGlobalStyle`
 .grid__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -43,4 +46,6 @@
 .grid-footer {
     grid-column: 1 / 13; 
 }
+`;
 
+export default Grid;

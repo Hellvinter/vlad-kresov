@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-import { social, contacts, afterWord } from "../Data/info ";
+import { social, contacts, afterWord } from "../Data/info";
 import { Social, Email } from "./contacts";
 
 function Footer() {
   return (
-    <Footer id="contact">
+    <MyFooter id="contact" className="grid-footer">
       <div>
         <Heading>Contacts</Heading>
         <PunchLine>"It's not a bug... it's a feature"</PunchLine>
@@ -23,11 +23,11 @@ function Footer() {
         <Email arr={contacts} />
       </Contacts>
       <LastWishes>{afterWord.lastWord}</LastWishes>
-    </Footer>
+    </MyFooter>
   );
 }
 
-const Footer = styled.footer`
+const MyFooter = styled.footer`
   height: 100vh;
   padding-top: 5rem;
   display: flex;

@@ -5,7 +5,7 @@ import { expirience } from "../Data/info";
 
 function WorkExpirience() {
   return (
-    <Expririence id="expirience">
+    <Expririence id="expirience" className="grid-expirience">
       <h2> Expirience </h2>
       <h3>Self-employed software developer</h3>
       <SubHeading>september 2018 - current</SubHeading>

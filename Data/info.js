@@ -38,7 +38,7 @@ export const social = [
   },
   {
     media: "https://img.icons8.com/color/36/000000/twitter.png",
-    social: "https://twitter.com/" + "7ME6EvMj6NVQe8H?lang=en"
+    social: "https://twitter.com/" + "Hellvinter"
   }
 ];
 

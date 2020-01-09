@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-// import WeatherApp from "../../img/projects/react_weather_app.png";
+//import WeatherApp from "../static/projects/react_weather_app.png";
 // import TodoList from "../../img/projects/react_todo.png";
 // import JapaneseInn from "../../img/projects/Japanese_inn.png";
 // import TravelAgency from "../../img/projects/Travel_agency.png";
@@ -10,7 +10,7 @@ const projects = [
   {
     title: "Weather App",
     subtitle: "react project",
-    //projectImg: WeatherApp,
+    projectImg: "projects/react_weather_app.png",
     toServer: "Watch live version",
     linkToServer: "https://hellvinter.github.io/WeatherApp/",
     toCode: "Watch code",
@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Todo list",
     subtitle: "react project",
-    //projectImg: TodoList,
+    projectImg: "projects/react_todo.png",
     toServer: "Watch live version",
     linkToServer: "https://hellvinter.github.io/ReactTodoApp/",
     toCode: "Watch code",
@@ -28,7 +28,7 @@ const projects = [
   {
     title: "Japanece inn",
     subtitle: "static html page",
-    //projectImg: JapaneseInn,
+    projectImg: "projects/Japanese_inn.png",
     toServer: "Watch live version",
     linkToServer: "https://hellvinter.github.io/Japanese_inn/",
     toCode: "Watch code",
@@ -37,7 +37,7 @@ const projects = [
   {
     title: "Travel agency",
     subtitle: "static html page",
-    //projectImg: TravelAgency,
+    projectImg: "projects/Travel_agency.png",
     toServer: "Watch live version",
     linkToServer: "https://hellvinter.github.io/Travel_agency/",
     toCode: "Watch code",
@@ -51,10 +51,7 @@ const ProjectsMap = () => {
       <CardTitle>{item.title}</CardTitle>
       <CardSubTitle>{item.subtitle}</CardSubTitle>
       <PortfolioListImgContainer>
-        {/* <PortfoliListImg
-          src={item.projectImg}
-          alt="project img"
-        /> */}
+        <PortfoliListImg src={item.projectImg} alt="project img" />
       </PortfolioListImgContainer>
       <PortfoliListLinkContainer>
         <PortfoliListLink href={item.linkToServer} target="_blank">
@@ -70,7 +67,7 @@ const ProjectsMap = () => {
 
 function PortfolioProjectsList() {
   return (
-    <Portfolio id="portfolioList">
+    <Portfolio id="portfolioList" className="grid-portfolioList">
       <Heading>Projects</Heading>
       <CardSet>
         <ProjectsMap />
@@ -133,7 +130,7 @@ const PortfolioListImgContainer = styled.div`
   margin-bottom: 0.5rem;
 `;
 
-const PortfoliListImg = styled.div`
+const PortfoliListImg = styled.img`
   max-width: 90%;
   height: auto;
 `;

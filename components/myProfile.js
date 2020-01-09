@@ -22,7 +22,7 @@ const PersonalData = () => {
 
 function MyProfile() {
   return (
-    <Profile id="profile">
+    <Profile id="profile" className="grid-profile">
       <SubGrid>
         <ProfileHeading>
           <h2>Profile</h2>

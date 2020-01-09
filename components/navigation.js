@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 const Nav = () => {
   return links.map((item, index) => (
-    <NavLi className="navigation__item" key={index}>
+    <NavLi key={index}>
       <NavLink
         activeClass="current"
         to={item.link}
@@ -22,7 +22,7 @@ const Nav = () => {
 
 function Navigation() {
   return (
-    <Nav>
+    <Nav className="grid-navigation">
       <NavUl>
         <Nav />
       </NavUl>

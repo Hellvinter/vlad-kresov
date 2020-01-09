@@ -15,20 +15,20 @@ export const Email = props => {
   return props.arr.map((item, index) => (
     <React.Fragment>
       <a href={`mailto:${item.email}`}>
-        <Email key={index}>{item.email}</Email>
+        <ContactMe key={index}>{item.email}</ContactMe>
       </a>
     </React.Fragment>
   ));
 };
 
-const Email = styled.h4`
+const ContactMe = styled.h4`
   color: silver;
   &:hover {
     color: mediumSeaGreen;
   }
 `;
 // Merge it with Email and make styles depends on props
-const Email2 = styled.h4`
+const ContactMe2 = styled.h4`
   color: silver; //rgb(45,45,45);
   margin: 0;
   &:hover {

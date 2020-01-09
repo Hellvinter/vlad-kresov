@@ -1,12 +1,12 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link } from "react-scroll";
 
 import { FaChevronDown } from "react-icons/fa";
 
 function Header() {
   return (
-    <Header>
+    <PageHeader className="grid-header">
       <Overlay></Overlay>
       <HeadingWrapper>
         <Heading>Vlad Kresov</Heading>
@@ -17,15 +17,14 @@ function Header() {
           <ToContentArrow />
         </Link>
       </ToContentContainer>
-    </Header>
+    </PageHeader>
   );
 }
 
-const Header = styled.header`
+const PageHeader = styled.header`
   width: 100%;
   height: 100vh; //57.525rem;
-  background: url("../static/bg/Ciri_with_Geralt1920x1080.png") top/cover
-    no-repeat fixed;
+  background: url("bg/Ciri_with_Geralt1920x1080.png") top/cover no-repeat fixed;
 `;
 
 const Overlay = styled.div`
@@ -65,15 +64,6 @@ const ToContentContainer = styled.div`
   background-color: rgb(34, 34, 34);
 `;
 
-const ToContentArrow = styled(FaChevronDown)`
-  display: block;
-  color: white;
-  margin: 0 auto;
-  position: relative;
-  top: 0.5rem;
-  animation: ${clickMe} 1.6s ease-in-out infinite;
-`;
-
 const clickMe = keyframes`
   % {
         top: .5rem;
@@ -84,6 +74,15 @@ const clickMe = keyframes`
     100% {
         top: .5rem;
     }
+`;
+
+const ToContentArrow = styled(FaChevronDown)`
+  display: block;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  top: 0.5rem;
+  animation: ${clickMe} 1.6s ease-in-out infinite;
 `;
 
 export default Header;

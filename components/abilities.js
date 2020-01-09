@@ -11,7 +11,7 @@ const Stars = totalStars => {
         <EmpireInsignia key={index} />
       ))}
     </InsigniaContainer>
-  );#3cb371
+  );
 };
 
 const AbilitiesList = props => {
@@ -26,7 +26,7 @@ const AbilitiesList = props => {
 
 function Abilities() {
   return (
-    <Abilities id="abilities">
+    <MyAbilities id="abilities" className="grid-abilities">
       <Heading>My Abilities</Heading>
       <SubHeading>Skills</SubHeading>
       <SkillsUl>
@@ -36,14 +36,13 @@ function Abilities() {
       <SkillsUl>
         <AbilitiesList arr={languages} />
       </SkillsUl>
-      <SubHeading>Education</SubHeading>
-    </Abilities>
+    </MyAbilities>
   );
 }
 
 // Styled Components.
 
-const Abilities = styled.section`
+const MyAbilities = styled.section`
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   display: flex;
@@ -83,11 +82,6 @@ const SkillsItem = styled.div`
 `;
 
 const InsigniaContainer = styled.span`
-  margin-right: 0.2rem;
-  color: #3cb371;
-`;
-
-const EmpireInsignia = styled(FaEmpire)`
   width: 18%;
   margin-right: 2.1rem;
   padding: 0.15rem 0.1rem;
@@ -96,6 +90,11 @@ const EmpireInsignia = styled(FaEmpire)`
   align-content: center;
   border: 1px solid #3cb371;
   border-radius: 5%;
+`;
+
+const EmpireInsignia = styled(FaEmpire)`
+  margin-right: 0.2rem;
+  color: #3cb371;
 `;
 
 export default Abilities;
