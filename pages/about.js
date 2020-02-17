@@ -4,11 +4,12 @@ import Head from "next/head";
 import GlobalStyles from "../styles/global_styles";
 import Grid from "../styles/grid";
 
-import Header from "../components/header";
-import PortfolioProjectsList from "../components/portfolioList";
+import MyProfile from "../components/myProfile";
+import Abilities from "../components/abilities";
+import WorkExpirience from "../components/expirience";
 import Footer from "../components/footer";
 
-const Home = () => (
+const About = () => (
   <div>
     <Head>
       <title>Home</title>
@@ -22,9 +23,10 @@ const Home = () => (
     <Grid />
 
     <div className="grid__container">
-      <Header />
       <main className="grid-mainWrapper">
-        <PortfolioProjectsList />
+        <MyProfile />
+        <Abilities />
+        <WorkExpirience />
         <Footer />
       </main>
     </div>
@@ -33,4 +35,4 @@ const Home = () => (
   </div>
 );
 
-export default Home;
+export default About;
