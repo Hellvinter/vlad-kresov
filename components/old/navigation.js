@@ -1,7 +1,29 @@
 import React from "react";
 import styled from "styled-components";
-import { links } from "../Data/info";
 import { Link } from "react-scroll";
+
+const links = [
+  {
+    name: "Profile",
+    link: "profile"
+  },
+  {
+    name: "Projects",
+    link: "portfolioList"
+  },
+  {
+    name: "Abilities",
+    link: "abilities"
+  },
+  {
+    name: "Expirience",
+    link: "expirience"
+  },
+  {
+    name: "Contact",
+    link: "contact"
+  }
+];
 
 const Nav = () => {
   return links.map((item, index) => (

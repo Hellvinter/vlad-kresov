@@ -2,35 +2,32 @@ import React from "react";
 import Head from "next/head";
 
 import GlobalStyles from "../styles/global_styles";
-import Grid from "../styles/grid";
 
-import Header from "../components/header";
-import PortfolioProjectsList from "../components/portfolioList";
-import Footer from "../components/footer";
+import MainSidebar from "../components/common/main_sidebar";
+import PortfolioProjects from "../components/portfolioList";
 
-const Home = () => (
-  <div>
-    <Head>
-      <title>Home</title>
-      <link
-        href="https://fonts.googleapis.com/css?family=Raleway:300,400|Roboto&display=swap"
-        rel="stylesheet"
-      ></link>
-    </Head>
+function Home() {
+  return (
+    <div>
+      <Head>
+        <title>Home</title>
+        <link
+          href="https://fonts.googleapis.com/css?family=Raleway:300,400|Roboto&display=swap"
+          rel="stylesheet"
+        ></link>
+      </Head>
 
-    <GlobalStyles />
-    <Grid />
+      <GlobalStyles />
+      <div>
+        <MainSidebar />
+        <main>
+          <PortfolioProjects />
+        </main>
+      </div>
 
-    <div className="grid__container">
-      <Header />
-      <main className="grid-mainWrapper">
-        <PortfolioProjectsList />
-        <Footer />
-      </main>
+      <style jsx>{``}</style>
     </div>
-
-    <style jsx>{``}</style>
-  </div>
-);
+  );
+}
 
 export default Home;

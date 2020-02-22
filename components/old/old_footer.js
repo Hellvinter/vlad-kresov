@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import { social, contacts, afterWord } from "../Data/info";
-import { Social, Email } from "./contacts";
+import { social, contacts, afterWord } from "../../Data/info";
+import { Social, Email } from "../contacts";
 
 function Footer() {
   return (

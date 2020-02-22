@@ -487,6 +487,14 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: #3cb371
+}
+
 /* Typography.
 ===============================================================================
 */
@@ -507,7 +515,7 @@ p {
     font-weight: 300;
     text-shadow: 0.10px 0.10px 0.10px #000;
 }
-
+${"" /* Those style should be applyed in their components */}
   .header__heading {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;

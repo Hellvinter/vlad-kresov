@@ -130,26 +130,3 @@ export const afterWord = {
     "If I wrong... please contact me with one of the presented ways, " +
     "and I fix it in no time."
 };
-
-export const links = [
-  {
-    name: "Profile",
-    link: "profile"
-  },
-  {
-    name: "Projects",
-    link: "portfolioList"
-  },
-  {
-    name: "Abilities",
-    link: "abilities"
-  },
-  {
-    name: "Expirience",
-    link: "expirience"
-  },
-  {
-    name: "Contact",
-    link: "contact"
-  }
-];

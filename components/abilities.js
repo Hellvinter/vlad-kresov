@@ -4,11 +4,12 @@ import styled from "styled-components";
 import { FaEmpire } from "react-icons/fa/index";
 import { skills, languages } from "../Data/info";
 
+// Some issue with span should fix it
 const Stars = totalStars => {
   return (
     <InsigniaContainer>
       {[...Array(totalStars)].map(index => (
-        <EmpireInsignia key={index} />
+        <span style={{marginRight: "0.2rem", color: "#3cb371"}} key={index} />
       ))}
     </InsigniaContainer>
   );
@@ -91,7 +92,7 @@ const InsigniaContainer = styled.span`
   border: 1px solid #3cb371;
   border-radius: 5%;
 `;
-
+// It's span in  InsigniaContainer
 const EmpireInsignia = styled(FaEmpire)`
   margin-right: 0.2rem;
   color: #3cb371;
