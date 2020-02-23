@@ -4,7 +4,8 @@ import Head from "next/head";
 import GlobalStyles from "../styles/global_styles";
 
 import MainSidebar from "../components/common/main_sidebar";
-import PortfolioProjects from "../components/portfolioList";
+import MyProfile from "../components/myProfile";
+import WorkExpirience from "../components/expirience";
 
 function Home() {
   return (
@@ -21,7 +22,8 @@ function Home() {
       <div>
         <MainSidebar />
         <main>
-          <PortfolioProjects />
+          <MyProfile />
+          <WorkExpirience />
         </main>
       </div>
 

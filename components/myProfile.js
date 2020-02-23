@@ -22,7 +22,7 @@ const PersonalData = () => {
 
 function MyProfile() {
   return (
-    <Profile id="profile" className="grid-profile">
+    <Profile>
       <SubGrid>
         <ProfileHeading>
           <h2>Profile</h2>
@@ -40,10 +40,6 @@ function MyProfile() {
             <SubHeading>Details</SubHeading>
             <PersonalData />
           </ProfileNameWrapper>
-          <ProfileContacts>
-            <Social arr={social} />
-            <Email arr={contacts} />
-          </ProfileContacts>
         </ProfileInfo>
         <Interests>
           <InterestHeading>Interests</InterestHeading>
@@ -57,7 +53,6 @@ function MyProfile() {
 const Profile = styled.section`
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  background: #3c5267;
 `;
 
 const SubGrid = styled.div`
@@ -72,14 +67,14 @@ const ProfileHeading = styled.div`
   width: 100%;
   justify-self: center;
   text-align: center;
-  border-bottom: 1px solid mediumSeaGreen;
+  border-bottom: 1px solid #3cb371;
   margin-bottom: 1.5rem;
   font-size: 1.5em;
   & h2 {
-    font-weight: normal;
-    color: mediumSeaGreen;
+    color: #3cb371;
   }
   & p {
+    font-family: "Raleway", sans-serif;
     font-size: 0.85em;
     color: silver;
   }
@@ -129,8 +124,8 @@ const Interests = styled.div`
   margin-top: 1rem;
   grid-column: 5 / 9;
   grid-row: 3 / 4;
-  border-bottom: 1px solid mediumSeaGreen;
-  border-top: 1px solid mediumSeaGreen;
+  border-bottom: 1px solid #3cb371;
+  border-top: 1px solid #3cb371;
   color: silver;
 `;
 

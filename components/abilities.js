@@ -9,7 +9,7 @@ const Stars = totalStars => {
   return (
     <InsigniaContainer>
       {[...Array(totalStars)].map(index => (
-        <span style={{marginRight: "0.2rem", color: "#3cb371"}} key={index} />
+        <span style={{ marginRight: "0.2rem", color: "#3cb371" }} key={index} />
       ))}
     </InsigniaContainer>
   );
@@ -27,7 +27,7 @@ const AbilitiesList = props => {
 
 function Abilities() {
   return (
-    <MyAbilities id="abilities" className="grid-abilities">
+    <MyAbilities>
       <Heading>My Abilities</Heading>
       <SubHeading>Skills</SubHeading>
       <SkillsUl>
@@ -49,7 +49,6 @@ const MyAbilities = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #3c5267;
 `;
 
 const Heading = styled.h2`

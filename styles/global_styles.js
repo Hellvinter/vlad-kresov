@@ -513,18 +513,13 @@ p, a, h3, h4 {
 
 p {
     font-weight: 300;
-    text-shadow: 0.10px 0.10px 0.10px #000;
 }
 ${"" /* Those style should be applyed in their components */}
   .header__heading {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
     font-weight: 300;
-  }
-
-.profile__heading p  {
-    font-family: 'Raleway', sans-serif;
-}  
+  } 
 
 `;
 

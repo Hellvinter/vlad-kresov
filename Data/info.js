@@ -29,16 +29,28 @@ export const about = {
 
 export const social = [
   {
-    media: "https://img.icons8.com/bubbles/36/000000/github.png",
-    social: "https://github.com/Hellvinter"
+    media: "https://img.icons8.com/bubbles/24/000000/github.png",
+    social: "https://github.com/Hellvinter",
+    alt: "GitHub",
+    title: "GitHub"
   },
   {
-    media: "https://img.icons8.com/color/36/000000/linkedin.png",
-    social: "https://www.linkedin.com/in/vladislav-kresov-9b4aa517a/"
+    media: "https://img.icons8.com/color/24/000000/twitter.png",
+    social: "https://twitter.com/" + "Hellvinter",
+    alt: "Twitter",
+    title: "Twitter"
   },
   {
-    media: "https://img.icons8.com/color/36/000000/twitter.png",
-    social: "https://twitter.com/" + "Hellvinter"
+    media: "https://img.icons8.com/windows/24/000000/dev.png",
+    social: "https://dev.to/hellvinter",
+    alt: "Dev community",
+    title: "Dev community"
+  },
+  {
+    media: "https://img.icons8.com/color/24/000000/linkedin.png",
+    social: "https://www.linkedin.com/in/vladislav-kresov-9b4aa517a/",
+    alt: "Linkedin",
+    title: "Linkedin"
   }
 ];
 

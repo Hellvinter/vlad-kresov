@@ -8,12 +8,8 @@ const routs = [
     link: "/"
   },
   {
-    name: "About",
-    link: "/about"
-  },
-  {
-    name: "Blog",
-    link: "/blog"
+    name: "Portfolio",
+    link: "/portfolio"
   },
   {
     name: "Contact",
@@ -45,6 +41,8 @@ function Navigation() {
 const Nav = styled.nav`
   width: 100%;
   padding: 0.5rem 1rem;
+  align-self: center;
+  margin-bottom: 3rem;
   background-color: inherit;
 `;
 // left property of UL was 15 previously
@@ -61,14 +59,9 @@ const Ul = styled.ul`
 const Li = styled.li`
   padding: 0.3rem;
   margin-right: 1.7rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
   color: #fff;
-`;
-
-const StyledLink = styled(Link)`
-  color: #fff;
-  &:visited {
-    color: inherit;
-  }
 `;
 
 export default Navigation;

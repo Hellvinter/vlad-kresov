@@ -5,7 +5,9 @@ import GlobalStyles from "../styles/global_styles";
 
 import MainSidebar from "../components/common/main_sidebar";
 
-function Blog() {
+import PortfolioProjects from "../components/portfolioList";
+
+function About() {
   return (
     <div>
       <Head>
@@ -20,9 +22,9 @@ function Blog() {
 
       <div>
         <MainSidebar />
-        <div>
-          <h2 style={{ textAlign: "center" }}>Just placeholder</h2>
-        </div>
+        <main>
+          <PortfolioProjects />
+        </main>
       </div>
 
       <style jsx>{``}</style>
@@ -30,4 +32,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default About;
