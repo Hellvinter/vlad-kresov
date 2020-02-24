@@ -36,12 +36,11 @@ function Navigation() {
     </Nav>
   );
 }
-
+//
 // Styled components.
+//
 const Nav = styled.nav`
   width: 100%;
-  padding: 0.5rem 1rem;
-  align-self: center;
   margin-bottom: 3rem;
   background-color: inherit;
 `;
@@ -49,16 +48,15 @@ const Nav = styled.nav`
 const Ul = styled.ul`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  width: 100%%;
   list-style: none;
+  padding: 0;
   color: #fff;
 `;
-
+// margin-right: 1.7rem;
+// /
 const Li = styled.li`
   padding: 0.3rem;
-  margin-right: 1.7rem;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   color: #fff;

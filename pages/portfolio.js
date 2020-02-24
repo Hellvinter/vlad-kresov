@@ -23,7 +23,7 @@ function About() {
       <div>
         <MainSidebar />
         <main>
-          <PortfolioProjects />
+          <h2 style={{ textAlign: "center" }}>Placeholder</h2>
         </main>
       </div>
 

@@ -46,7 +46,7 @@ const SocialLink = styled.a`
 
 const ContactMe = styled.p`
   margin-top: 0.3rem;
-  color: silver;
+  color: #fff;
   &:hover {
     color: #3cb371;
   }
@@ -56,10 +56,12 @@ const ContactMe2 = styled.h4`
   color: silver; //rgb(45,45,45);
   margin: 0;
   &:hover {
-    color: mediumSeaGreen;
+    color: #3cb371;
   }
 `;
 
 const Follow = styled.div`
+  width: 100%;
+  text-align: center;
   margin-bottom: 6rem;
 `;
