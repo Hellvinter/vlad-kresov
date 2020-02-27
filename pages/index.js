@@ -6,6 +6,7 @@ import GlobalStyles from "../styles/global_styles";
 import MainSidebar from "../components/common/main_sidebar";
 import MyProfile from "../components/myProfile";
 import WorkExpirience from "../components/expirience";
+import PortfolioProjects from "../components/portfolioList";
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
         <main>
           <MyProfile />
           <WorkExpirience />
+          <PortfolioProjects />
         </main>
       </div>
 
