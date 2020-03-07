@@ -4,13 +4,12 @@ import Head from "next/head";
 import GlobalStyles from "../styles/global_styles";
 
 import Navigation from "../components/generic_components/navigation";
-import Introduction from "../components/professional_page_components/introduction";
 
-function Home() {
+function Future() {
   return (
     <div className="page-theme">
       <Head>
-        <title>Home</title>
+        <title>Future</title>
         <link
           href="https://fonts.googleapis.com/css?family=Raleway:300,400|Roboto&display=swap"
           rel="stylesheet"
@@ -19,24 +18,24 @@ function Home() {
 
       <GlobalStyles />
 
-      <header>
+      <main className="container">
         <Navigation />
-      </header>
-
-      <main>
-        <Introduction />
       </main>
-
       <style jsx>{`
         .page-theme {
           background-color: #08223b;
+        }
+        .container {
+          max-width: 1200px;
+          margin-left: auto;
+          margin-right: auto;
+          padding-left: 20px;
+          padding-right: 20px;
+          backround-color: inherit;
         }
       `}</style>
     </div>
   );
 }
-// Themes
-// 143452
-// 0a2742
-// 08223b
-export default Home;
+
+export default Future;

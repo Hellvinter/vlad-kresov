@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Social, Email } from "./contacts";
-import { interests, about, social, contacts, profile } from "../Data/info";
+import { interests, about, profile } from "../Data/info";
 
 // Displaying my personal data.
 const PersonalData = () => {
@@ -20,9 +19,9 @@ const PersonalData = () => {
   ));
 };
 
-function MyProfile() {
+function Profile() {
   return (
-    <Profile>
+    <ProfileWrapper>
       <SubGrid>
         <ProfileHeading>
           <h2>Profile</h2>
@@ -46,11 +45,11 @@ function MyProfile() {
           <InterestsText>{interests.text}</InterestsText>
         </Interests>
       </SubGrid>
-    </Profile>
+    </ProfileWrapper>
   );
 }
 
-const Profile = styled.section`
+const ProfileWrapper = styled.section`
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 `;
@@ -137,4 +136,4 @@ const InterestsText = styled.p`
   font-size: 1.1em;
 `;
 
-export default MyProfile;
+export default Profile;

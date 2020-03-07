@@ -8,12 +8,8 @@ const routs = [
     link: "/"
   },
   {
-    name: "Portfolio",
-    link: "/portfolio"
-  },
-  {
-    name: "Contact",
-    link: "/contact"
+    name: "Future",
+    link: "/future"
   }
 ];
 
@@ -36,30 +32,30 @@ function Navigation() {
     </Nav>
   );
 }
-//
+
 // Styled components.
-//
 const Nav = styled.nav`
   width: 100%;
-  margin-bottom: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
   background-color: inherit;
 `;
-// left property of UL was 15 previously
+
 const Ul = styled.ul`
   display: flex;
-  flex-direction: column;
   align-items: center;
   list-style: none;
+  margin-right: 5rem;
   padding: 0;
-  color: #fff;
 `;
 // margin-right: 1.7rem;
-// /
 const Li = styled.li`
   padding: 0.3rem;
-  margin-bottom: 0.5rem;
+  margin-right: 1.5rem;
   text-transform: uppercase;
-  color: #fff;
+  color: #b6bbcc;
 `;
 
 export default Navigation;

@@ -464,10 +464,12 @@ template {
 }
 
 /* 
-  End of normalize.
+  END OF NORMOLIZE
 */
 
-/* Base styles of the project.
+/* BASIC STYLES OF THE PROJECT
+===============================================================================
+===============================================================================
 ===============================================================================
 */
 
@@ -475,8 +477,8 @@ template {
 html {
   box-sizing: border-box;
 }
- // Make all elements from the DOM inherit 
- // from the parent box-sizing
+ /*Make all elements from the DOM inherit  */
+ /* from the parent box-sizing */
 *,
 *::before,
 *::after {
@@ -492,7 +494,7 @@ a:visited {
 }
 
 a:hover {
-  color: #3cb371
+  color: #5bf5ab
 }
 
 /* Typography.
@@ -502,24 +504,19 @@ a:hover {
 h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    color: mediumSeaGreen;
+    color: #5bf5ab
   }
 
 p, a, h3, h4 {
     font-family: 'Roboto', sans-serif;
     line-height: 1.30;
     font-weight: 400;
+    color: #b6bbcc;
 }
 
 p {
     font-weight: 300;
 }
-${"" /* Those style should be applyed in their components */}
-  .header__heading {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5em;
-    font-weight: 300;
-  } 
 
 `;
 
