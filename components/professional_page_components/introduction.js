@@ -11,7 +11,7 @@ function Introduction() {
         <h3 className="h3">I solve problems.</h3>
         <p className="my-specialization">
           I'm a software developer based in Russia. I specialize in building
-          high-quality websites.
+          high-quality websites and applications.
         </p>
         <Email text={"Get in touch"} />
       </section>

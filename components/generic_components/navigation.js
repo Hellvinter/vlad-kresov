@@ -53,9 +53,16 @@ const Ul = styled.ul`
 // margin-right: 1.7rem;
 const Li = styled.li`
   padding: 0.3rem;
-  margin-right: 1.5rem;
-  text-transform: uppercase;
+  margin-right: 2rem;
   color: #b6bbcc;
+
+  &::before {
+    content: "•";
+    color: #5bf5ab;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+  }
 `;
 
 export default Navigation;

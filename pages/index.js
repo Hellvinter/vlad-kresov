@@ -5,6 +5,7 @@ import GlobalStyles from "../styles/global_styles";
 
 import Navigation from "../components/generic_components/navigation";
 import Introduction from "../components/professional_page_components/introduction";
+import AboutMe from "../components/professional_page_components/about_me";
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
 
       <main>
         <Introduction />
+        <AboutMe />
       </main>
 
       <style jsx>{`

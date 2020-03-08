@@ -18,20 +18,12 @@ function Future() {
 
       <GlobalStyles />
 
-      <main className="container">
+      <main>
         <Navigation />
       </main>
       <style jsx>{`
         .page-theme {
           background-color: #08223b;
-        }
-        .container {
-          max-width: 1200px;
-          margin-left: auto;
-          margin-right: auto;
-          padding-left: 20px;
-          padding-right: 20px;
-          backround-color: inherit;
         }
       `}</style>
     </div>
